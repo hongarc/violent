@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include highlight.js styles -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark-reasonable.min.css"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="inputArea">
+        <label for="inputContent">Enter Content:</label>
+        <textarea id="inputContent" rows="10"></textarea>
+    </div>
+
+    <div id="outputArea">
+        <button id="copyButton" onclick="copyToClipboard()">Copy</button>
+        <!-- Use a <pre> element with a class for highlighting -->
+        <pre id="outputContent" class="code"></pre>
+    </div>
+
+    <!-- Include highlight.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+        referrerpolicy="no-referrer"></script>
+    <!-- Initialize highlight.js -->
+    <script>hljs.highlightAll();</script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
