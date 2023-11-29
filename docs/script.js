@@ -8,7 +8,7 @@ const outputArea = document.getElementById('outputArea');
 
 function convertMethods(inputString) {
   // Regular expression to match static method declarations
-  const methodRegex = /\s*static\s+(async\s+)?(\w+)\(([^)]*)\)\s*{\s*return (\w+)\.(\w+)\(([^)]*)\);\s*}/g;
+  const methodRegex = /\s*static\s+(async\s+)?(\w+)\(([^)]*)\)\s*{\s*(?:return )?(\w+)\.(\w+)\(([^)]*)\);\s*}/g;
 
   // Replace static method declarations with the desired output
   const convertedString = inputString.replace(
